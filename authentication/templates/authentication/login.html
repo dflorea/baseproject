@@ -6,14 +6,15 @@
 
 <div class="col-md-6 offset-md-3">
 
-  <form>
+  <form method="POST">
+    {% csrf_token %}
     <div class="form-group">
-      <input type="email" class="form-control" placeholder="Enter Username" name="username">
+      <input type="text" class="form-control" placeholder="Enter Username" name="username">
     </div>
     <div class="form-group">
       <input type="password" class="form-control" placeholder="Enter Password" name="password">
     </div>
-    <button type="submit" class="btn btn-primary">Login</button>
+    <button type="submit" class="btn btn-secondary">Login</button>
 </form>
 
 </div>
