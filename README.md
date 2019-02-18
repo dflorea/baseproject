@@ -1,0 +1,2 @@
+# baseproject
+Django base project
