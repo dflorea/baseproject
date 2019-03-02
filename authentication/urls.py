@@ -20,4 +20,5 @@ urlpatterns = [
     #url(r'^admin/', admin.site.urls),
     url(r'^$', views.home, name="home"),
     url(r'^login/', views.login_user, name="login"),
+    url(r'^logout/', views.logout_user, name="logout"),
 ]
